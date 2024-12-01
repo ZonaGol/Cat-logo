@@ -1,0 +1,125 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo de Camisetas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Catálogo de Camisetas</h1>
+            <input type="text" id="buscador" placeholder="Buscar club..." oninput="filtrarCamisetas()">
+        </header>
+        <div class="catalogo" id="catalogo">
+    
+                <div class="camiseta" onclick="mostrarGaleria('Ajax 24-25 Training', ['Ajax 24-25 Training/1.jpg', 'Ajax 24-25 Training/2.jpg', 'Ajax 24-25 Training/3.jpg', 'Ajax 24-25 Training/4.jpg', 'Ajax 24-25 Training/5.jpg', 'Ajax 24-25 Training/6.jpg'])">
+                    <h2>Ajax 24-25 Training</h2>
+                    <img src="Ajax 24-25 Training/1.jpg" alt="Camiseta Ajax 24-25 Training" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Alemania 1990 Local', ['Alemania 1990 Local/1.jpg', 'Alemania 1990 Local/2.jpg', 'Alemania 1990 Local/3.jpg', 'Alemania 1990 Local/4.jpg', 'Alemania 1990 Local/5.jpg', 'Alemania 1990 Local/6.jpg', 'Alemania 1990 Local/7.jpg', 'Alemania 1990 Local/8.jpg'])">
+                    <h2>Alemania 1990 Local</h2>
+                    <img src="Alemania 1990 Local/1.jpg" alt="Camiseta Alemania 1990 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Atletico Madrid 96-97 Visitante', ['Atletico Madrid 96-97 Visitante/1.jpg', 'Atletico Madrid 96-97 Visitante/2.jpg', 'Atletico Madrid 96-97 Visitante/3.jpg', 'Atletico Madrid 96-97 Visitante/4.jpg', 'Atletico Madrid 96-97 Visitante/5.jpg', 'Atletico Madrid 96-97 Visitante/6.jpg', 'Atletico Madrid 96-97 Visitante/7.jpg'])">
+                    <h2>Atletico Madrid 96-97 Visitante</h2>
+                    <img src="Atletico Madrid 96-97 Visitante/1.jpg" alt="Camiseta Atletico Madrid 96-97 Visitante" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Barcelona 24-25 Local', ['Barcelona 24-25 Local/1.jpg', 'Barcelona 24-25 Local/2.jpg', 'Barcelona 24-25 Local/3.jpg', 'Barcelona 24-25 Local/4.jpg', 'Barcelona 24-25 Local/5.jpg', 'Barcelona 24-25 Local/6.jpg', 'Barcelona 24-25 Local/7.jpg', 'Barcelona 24-25 Local/8.jpg'])">
+                    <h2>Barcelona 24-25 Local</h2>
+                    <img src="Barcelona 24-25 Local/1.jpg" alt="Camiseta Barcelona 24-25 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Bayern Munich 24-25 Visitante 3º', ['Bayern Munich 24-25 Visitante 3º/1.jpg', 'Bayern Munich 24-25 Visitante 3º/2.jpg', 'Bayern Munich 24-25 Visitante 3º/3.jpg', 'Bayern Munich 24-25 Visitante 3º/4.jpg', 'Bayern Munich 24-25 Visitante 3º/5.jpg', 'Bayern Munich 24-25 Visitante 3º/6.jpg', 'Bayern Munich 24-25 Visitante 3º/7.jpg', 'Bayern Munich 24-25 Visitante 3º/8.jpg'])">
+                    <h2>Bayern Munich 24-25 Visitante 3º</h2>
+                    <img src="Bayern Munich 24-25 Visitante 3º/1.jpg" alt="Camiseta Bayern Munich 24-25 Visitante 3º" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Espanyol 24-25 Visitante', ['Espanyol 24-25 Visitante/1.jpg', 'Espanyol 24-25 Visitante/2.jpg', 'Espanyol 24-25 Visitante/3.jpg', 'Espanyol 24-25 Visitante/4.jpg', 'Espanyol 24-25 Visitante/5.jpg', 'Espanyol 24-25 Visitante/6.jpg', 'Espanyol 24-25 Visitante/7.jpg', 'Espanyol 24-25 Visitante/8.jpg'])">
+                    <h2>Espanyol 24-25 Visitante</h2>
+                    <img src="Espanyol 24-25 Visitante/1.jpg" alt="Camiseta Espanyol 24-25 Visitante" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('España 1996 Local', ['España 1996 Local/1.jpg', 'España 1996 Local/2.jpg', 'España 1996 Local/3.jpg', 'España 1996 Local/4.jpg', 'España 1996 Local/5.jpg', 'España 1996 Local/6.jpg', 'España 1996 Local/7.jpg'])">
+                    <h2>España 1996 Local</h2>
+                    <img src="España 1996 Local/1.jpg" alt="Camiseta España 1996 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Juventus 02-03 Local', ['Juventus 02-03 Local/1.jpg', 'Juventus 02-03 Local/2.jpg', 'Juventus 02-03 Local/3.jpg', 'Juventus 02-03 Local/4.jpg', 'Juventus 02-03 Local/5.jpg', 'Juventus 02-03 Local/6.jpg', 'Juventus 02-03 Local/7.jpg', 'Juventus 02-03 Local/8.jpg'])">
+                    <h2>Juventus 02-03 Local</h2>
+                    <img src="Juventus 02-03 Local/1.jpg" alt="Camiseta Juventus 02-03 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Juventus 24-25 Pre-partido', ['Juventus 24-25 Pre-partido/1.jpg', 'Juventus 24-25 Pre-partido/2.jpg', 'Juventus 24-25 Pre-partido/3.jpg', 'Juventus 24-25 Pre-partido/4.jpg', 'Juventus 24-25 Pre-partido/5.jpg', 'Juventus 24-25 Pre-partido/6.jpg'])">
+                    <h2>Juventus 24-25 Pre-partido</h2>
+                    <img src="Juventus 24-25 Pre-partido/1.jpg" alt="Camiseta Juventus 24-25 Pre-partido" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Manchester United 06-07', ['Manchester United 06-07/1.jpg', 'Manchester United 06-07/2.jpg', 'Manchester United 06-07/3.jpg', 'Manchester United 06-07/4.jpg', 'Manchester United 06-07/5.jpg', 'Manchester United 06-07/6.jpg', 'Manchester United 06-07/7.jpg'])">
+                    <h2>Manchester United 06-07</h2>
+                    <img src="Manchester United 06-07/1.jpg" alt="Camiseta Manchester United 06-07" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Manchester United 07-08 Local', ['Manchester United 07-08 Local/1.jpg', 'Manchester United 07-08 Local/10.jpg', 'Manchester United 07-08 Local/11.jpg', 'Manchester United 07-08 Local/12.jpg', 'Manchester United 07-08 Local/13.jpg', 'Manchester United 07-08 Local/14.jpg', 'Manchester United 07-08 Local/2.jpg', 'Manchester United 07-08 Local/3.jpg', 'Manchester United 07-08 Local/4.jpg', 'Manchester United 07-08 Local/5.jpg', 'Manchester United 07-08 Local/6.jpg', 'Manchester United 07-08 Local/7.jpg', 'Manchester United 07-08 Local/8.jpg', 'Manchester United 07-08 Local/9.jpg'])">
+                    <h2>Manchester United 07-08 Local</h2>
+                    <img src="Manchester United 07-08 Local/1.jpg" alt="Camiseta Manchester United 07-08 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Málaga 24-25 Pre-partido', ['Málaga 24-25 Pre-partido/1.jpg', 'Málaga 24-25 Pre-partido/2.jpg', 'Málaga 24-25 Pre-partido/3.jpg', 'Málaga 24-25 Pre-partido/4.jpg', 'Málaga 24-25 Pre-partido/5.jpg', 'Málaga 24-25 Pre-partido/6.jpg', 'Málaga 24-25 Pre-partido/7.jpg'])">
+                    <h2>Málaga 24-25 Pre-partido</h2>
+                    <img src="Málaga 24-25 Pre-partido/1.jpg" alt="Camiseta Málaga 24-25 Pre-partido" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Nigeria 1996 Local', ['Nigeria 1996 Local/1.jpg', 'Nigeria 1996 Local/2.jpg', 'Nigeria 1996 Local/3.jpg', 'Nigeria 1996 Local/4.jpg', 'Nigeria 1996 Local/5.jpg', 'Nigeria 1996 Local/6.jpg'])">
+                    <h2>Nigeria 1996 Local</h2>
+                    <img src="Nigeria 1996 Local/1.jpg" alt="Camiseta Nigeria 1996 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Osasuna 24-25 Local', ['Osasuna 24-25 Local/1.png', 'Osasuna 24-25 Local/2.png', 'Osasuna 24-25 Local/3.png', 'Osasuna 24-25 Local/4.png'])">
+                    <h2>Osasuna 24-25 Local</h2>
+                    <img src="Osasuna 24-25 Local/1.png" alt="Camiseta Osasuna 24-25 Local" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Porto 24-25 Training', ['Porto 24-25 Training/1.jpg', 'Porto 24-25 Training/2.jpg', 'Porto 24-25 Training/3.jpg', 'Porto 24-25 Training/4.jpg', 'Porto 24-25 Training/5.jpg', 'Porto 24-25 Training/6.jpg'])">
+                    <h2>Porto 24-25 Training</h2>
+                    <img src="Porto 24-25 Training/1.jpg" alt="Camiseta Porto 24-25 Training" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Portugal 2004 Visitante', ['Portugal 2004 Visitante/1.jpg', 'Portugal 2004 Visitante/2.jpg', 'Portugal 2004 Visitante/3.jpg', 'Portugal 2004 Visitante/4.jpg', 'Portugal 2004 Visitante/5.jpg', 'Portugal 2004 Visitante/6.jpg', 'Portugal 2004 Visitante/7.jpg'])">
+                    <h2>Portugal 2004 Visitante</h2>
+                    <img src="Portugal 2004 Visitante/1.jpg" alt="Camiseta Portugal 2004 Visitante" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Rayo Vallecano 24-25 Visitante', ['Rayo Vallecano 24-25 Visitante/1.jpg', 'Rayo Vallecano 24-25 Visitante/2.jpg', 'Rayo Vallecano 24-25 Visitante/3.jpg', 'Rayo Vallecano 24-25 Visitante/4.jpg', 'Rayo Vallecano 24-25 Visitante/5.jpg', 'Rayo Vallecano 24-25 Visitante/6.jpg', 'Rayo Vallecano 24-25 Visitante/7.jpg', 'Rayo Vallecano 24-25 Visitante/8.jpg'])">
+                    <h2>Rayo Vallecano 24-25 Visitante</h2>
+                    <img src="Rayo Vallecano 24-25 Visitante/1.jpg" alt="Camiseta Rayo Vallecano 24-25 Visitante" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Real Madrid 24-25 Edición especial', ['Real Madrid 24-25 Edición especial/1.jpg', 'Real Madrid 24-25 Edición especial/2.jpg', 'Real Madrid 24-25 Edición especial/3.jpg', 'Real Madrid 24-25 Edición especial/4.jpg', 'Real Madrid 24-25 Edición especial/5.jpg', 'Real Madrid 24-25 Edición especial/6.jpg', 'Real Madrid 24-25 Edición especial/7.jpg'])">
+                    <h2>Real Madrid 24-25 Edición especial</h2>
+                    <img src="Real Madrid 24-25 Edición especial/1.jpg" alt="Camiseta Real Madrid 24-25 Edición especial" class="imagen-principal">
+                </div>
+                
+                <div class="camiseta" onclick="mostrarGaleria('Real Oviedo 24-25 Visitante', ['Real Oviedo 24-25 Visitante/1.jpg', 'Real Oviedo 24-25 Visitante/2.jpg', 'Real Oviedo 24-25 Visitante/3.jpg', 'Real Oviedo 24-25 Visitante/4.jpg', 'Real Oviedo 24-25 Visitante/5.jpg', 'Real Oviedo 24-25 Visitante/6.jpg', 'Real Oviedo 24-25 Visitante/7.jpg', 'Real Oviedo 24-25 Visitante/8.jpg'])">
+                    <h2>Real Oviedo 24-25 Visitante</h2>
+                    <img src="Real Oviedo 24-25 Visitante/1.jpg" alt="Camiseta Real Oviedo 24-25 Visitante" class="imagen-principal">
+                </div>
+                
+        </div>
+
+        <!-- Galería Modal -->
+        <div id="galeria-modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarGaleria()">&times;</span>
+                <div id="imagenes-galeria" class="galeria-imagenes"></div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+    </html>
+    
